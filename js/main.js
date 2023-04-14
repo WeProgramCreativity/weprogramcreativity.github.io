@@ -63,3 +63,13 @@ jQuery(document).ready(function($) {
         });
 
 });
+
+        $(document).ready(function() {
+          // Open modal when portfolio item is clicked
+          $('.open-modal').on('click', function(e) {
+            e.preventDefault();
+            var modalTarget = $(this).attr('data-modal-target');
+            $(modalTarget).modal('show');
+          });
+        });
+
