@@ -28,7 +28,7 @@ body, html {
 }
 
 .page-heading {
-  background-image: url(../img/redmountains.jpeg);
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -889,7 +889,7 @@ footer a:hover {
 
 
 .more-about-us {
-  background-image: url(../img/booktocomputer.jpeg);
+  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
