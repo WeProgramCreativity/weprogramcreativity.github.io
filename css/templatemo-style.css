@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Kanit', sans-serif;
+  background-color: rgba(218,61,76,0.8);
 }
 
 body::-webkit-scrollbar {
@@ -19,7 +20,12 @@ body, html {
   min-height: 100%;
   overflow-x: hidden;
 }
-
+.image{
+  object-fit: cover;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* 4:3 aspect ratio */
+}
 
 .page-heading {
   background-image: url(../img/redmountains.jpeg);
@@ -34,26 +40,28 @@ body, html {
 #AboutUs{
   filter: brightness(120%);
 }
-
+#image1{
+  border-radius: 15px;
+}
 
 #modal{
-  position: fixed;
+  position: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 32px;
+  font-size: 50px;
   text-transform: uppercase;
   color:#232323;
   letter-spacing: 1px;
   background-color: rgba(250,250,250,0.8);
-  display: inline-block;
+  display: auto;
   margin-bottom: 0px;
-  margin-top: 400px;
-  padding: 20px 60px;
+  margin-top: 200px;
+  padding: auto;
   text-align: center;
 }
 #modal-close{
-  position: fixed;
+  position:auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -61,13 +69,17 @@ body, html {
   text-transform: uppercase;
   color:#232323;
   letter-spacing: 1px;
-  background-color: rgba(250,250,250,0.8);
+  background-color: rgba(250,250,250,0);
   display: inline-block;
   margin-bottom: 0px;
   margin-top: 300px;
-  padding: 20px 60px;
+  padding: 0px;
   text-align: bottom;
 }
+.image{
+  
+}
+
 
 
 .page-heading .heading-content h1 {
@@ -351,9 +363,15 @@ nav {
 
 .portfolio-item img {
   width: 100%;
+  
   overflow: hidden;
 }
-
+.full-screen-portfolio .portfolio-item {
+  text-align: center;
+  line-height: 150%;
+  text-transform: lowercase;
+  cursor: pointer;
+}
 .portfolio-item .thumb {
   position: relative;
 }
@@ -365,6 +383,9 @@ nav {
     width: 100%;
     bottom: 0;
     left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    
 }
 
 
@@ -440,17 +461,26 @@ nav {
 
 /* Modal */
 .modal {
-  background-color: rgba(0,0,0,.95);
+  background-color: rgba(0,0,0,.1);
   display: none;
   overflow: auto;
-  position: fixed;
+  position: auto;
   z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   transform: all 0.6s;
-  overflow: scroll;
+  overflow:visible;
+  text-align: center;
+  position: auto;
+  
+}
+#article{
+  font-size:medium;
+  text-transform:none;
+  margin-top: 350px;
+
 }
 
 .modal::-webkit-scrollbar {
@@ -460,11 +490,10 @@ nav {
 /* Modal Content */
 .modal-content {
   text-align: center;
-  position: relative;
-  top: 0;
+  position: auto;
+  top: 10px;
   width: 100%;
   margin: 0 auto;
-  background-color: transparent;
 }
 .modal-animated-in {
   animation: totop-in .6s ease;
@@ -505,6 +534,8 @@ nav {
 .modal-body {
   text-align: center;
   margin: 0 auto;
+  
+  
 }
 
 .modal-body input {
@@ -523,6 +554,8 @@ nav {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
+  position: auto;
+
 }
 
 .modal-body textarea {
@@ -536,13 +569,13 @@ nav {
   outline: none;
   border: none;
   box-shadow: none;
-  height: 165px;
+  height: auto;
   max-height: 220px;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 
 .modal-body button {
@@ -663,7 +696,7 @@ footer a:hover {
     position: absolute;
     text-align: left;
     width: 100%;
-    bottom: 5px;
+    bottom: 0px;
     left: 0;
 }
 
@@ -730,7 +763,7 @@ footer a:hover {
     position: absolute;
     text-align: left;
     width: 100%;
-    bottom: 5px;
+    bottom: 0px;
     left: 0;
 }
 
@@ -1337,7 +1370,7 @@ footer a:hover {
   }
 
   .modal-content {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 
   .grid-portfolio {
