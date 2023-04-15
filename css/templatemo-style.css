@@ -41,7 +41,7 @@ body, html {
   filter: brightness(120%);
 }
 #image1{
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 #modal{
@@ -384,7 +384,7 @@ nav {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
+    border-radius: 0px;
     
 }
 
@@ -548,7 +548,7 @@ nav {
 }
 
 .modal-body input {
-  border-radius: 5px;
+  border-radius: 0px;
   padding-left: 15px;
   font-size: 14px;
   font-weight: 200;
@@ -568,7 +568,7 @@ nav {
 }
 
 .modal-body textarea {
-  border-radius: 5px;
+  border-radius: 0px;
   padding-left: 15px;
   padding-top: 10px;
   font-size: 14px;
